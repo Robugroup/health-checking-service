@@ -1,8 +1,9 @@
-const { parseJSONObject } = require("parse-json-object");
 const fetch = (...args) =>
-	import("node-fetch").then(({ default: fetch }) => fetch(...args));
+import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 const checking = async (config) => {
+	const { parseJSONObject } = import("parse-json-object");
+
 	let headers = [];
 	if (Array.isArray(config.headers)) {
 		headers = config.headers.map((item) => [item.key, item.value]);
