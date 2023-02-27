@@ -1,0 +1,35 @@
+{
+  "name": "health-checking-service",
+  "version": "1.0.3",
+  "description": "health checker for node and can custom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1095.0",
+    "knex": "^2.3.0",
+    "lodash": "^4.17.21",
+    "minio": "^7.0.26",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.10",
+    "parse-json-object": "^3.0.1",
+    "pg": "^8.8.0",
+    "redis": "^3.0.2",
+    "sqlite3": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=12.22"
+  },
+  "author": "Ly Thanh Dat",
+  "license": "MIT",
+  "keywords": [
+    "health checker",
+    "express",
+    "koa",
+    "database health checker",
+    "object storage health checker",
+    "web service health checker",
+    "custom health checker"
+  ]
+}
